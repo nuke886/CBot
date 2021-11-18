@@ -20,7 +20,7 @@ bool send_play_payload = false;
 char track[512] = "null";
 
 char lavalinkNodeUrl[64] = "https://lavalink-repl.alexandertaylo8.repl.co"; // if it doesn't use SSL, replace https with http and wss with ws.
-char lavalinkNodePassword[64] = "youshallnotpass";
+char lavalinkNodePassword[64] = "";
 char totalShards[64] = "1"; // Default.
 char botId[16] = "BOT_ID_HERE";
 
