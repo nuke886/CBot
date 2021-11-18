@@ -35,8 +35,8 @@ LDFLAGS := -L$(LIBDIR) -ldiscord -lcurl -lcrypto -lpthread -pthread -lsqlite3 -l
 #     ex: 'foo.out: foo.c'
 # For $@ and $^ explanation, see:
 #     gnu.org/software/make/manual/html_node/Automatic-Variables.html
-%.out: %.c
-	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+%.out: main.c
+	$(CC) cJSON.c $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 all: $(EXES)
 
